@@ -1,0 +1,77 @@
+Dados
+
+ A Matrix 10 por 10 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 10 por 10 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 10 por 10 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 10 por 10 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 10 por 10 é simétrica O tempo foi 0 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 50 por 50 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 50 por 50 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 50 por 50 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 50 por 50 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 50 por 50 é simétrica O tempo foi 0 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 100 por 100 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 100 por 100 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 100 por 100 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 100 por 100 é simétrica O tempo foi 0 MiliSegundos 
+ A Matrix 100 por 100 é simétrica O tempo foi 0 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 500 por 500 é simétrica O tempo foi 3 MiliSegundos 
+ A Matrix 500 por 500 é simétrica O tempo foi 1 MiliSegundos 
+ A Matrix 500 por 500 é simétrica O tempo foi 2 MiliSegundos 
+ A Matrix 500 por 500 é simétrica O tempo foi 2 MiliSegundos 
+ A Matrix 500 por 500 é simétrica O tempo foi 1 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 1000 por 1000 é simétrica O tempo foi 7 MiliSegundos 
+ A Matrix 1000 por 1000 é simétrica O tempo foi 7 MiliSegundos 
+ A Matrix 1000 por 1000 é simétrica O tempo foi 8 MiliSegundos 
+ A Matrix 1000 por 1000 é simétrica O tempo foi 31 MiliSegundos 
+ A Matrix 1000 por 1000 é simétrica O tempo foi 29 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 5000 por 5000 é simétrica O tempo foi 342 MiliSegundos 
+ A Matrix 5000 por 5000 é simétrica O tempo foi 273 MiliSegundos 
+ A Matrix 5000 por 5000 é simétrica O tempo foi 225 MiliSegundos 
+ A Matrix 5000 por 5000 é simétrica O tempo foi 238 MiliSegundos 
+ A Matrix 5000 por 5000 é simétrica O tempo foi 217 MiliSegundos 
+----------------------------------------------------------------
+ A Matrix 10000 por 10000 é simétrica O tempo foi 941 MiliSegundos 
+ A Matrix 10000 por 10000 é simétrica O tempo foi 951 MiliSegundos 
+ A Matrix 10000 por 10000 é simétrica O tempo foi 1045 MiliSegundos 
+ A Matrix 10000 por 10000 é simétrica O tempo foi 928 MiliSegundos 
+ A Matrix 10000 por 10000 é simétrica O tempo foi 1130 MiliSegundos 
+----------------------------------------------------------------
+Java heap space
+--------------------------------------------------------------------------
+ A Matrix 10 por 10 é simétrica 
+Numero de comparações 112
+Numero de Operaçôes aritimeticas 100
+----------------------------------------------------------------
+ A Matrix 50 por 50 é simétrica 
+Numero de comparações 2552
+Numero de Operaçôes aritimeticas 2500
+----------------------------------------------------------------
+ A Matrix 100 por 100 é simétrica 
+Numero de comparações 10102
+Numero de Operaçôes aritimeticas 10000
+----------------------------------------------------------------
+ A Matrix 500 por 500 é simétrica 
+Numero de comparações 250502
+Numero de Operaçôes aritimeticas 250000
+----------------------------------------------------------------
+ A Matrix 1000 por 1000 é simétrica 
+Numero de comparações 1001002
+Numero de Operaçôes aritimeticas 1000000
+----------------------------------------------------------------
+ A Matrix 5000 por 5000 é simétrica 
+Numero de comparações 25005002
+Numero de Operaçôes aritimeticas 25000000
+----------------------------------------------------------------
+ A Matrix 10000 por 10000 é simétrica 
+Numero de comparações 100010002
+Numero de Operaçôes aritimeticas 100000000
+----------------------------------------------------------------
+Java heap space 
+Java heap space 
+Java heap space 
