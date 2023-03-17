@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import javax.swing.*;
-
+//Exercicios 1&2
 public class Aula04{ 
     public static void main(String[] args) {
         String g,h,j, str = " "; 
