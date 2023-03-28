@@ -20,5 +20,6 @@ public class TesteTurma {
         turma.setQuantAlunos(quantAlunos);
         msg = "Nome: "+turma.getNome() + "\nCurso: " + turma.getCurso() + "\nSerie: " + turma.getSerie() + "\nQuantidade de alunos: " + turma.getQuantAlunos();
         System.out.println(msg);
+        sc.close();
     }
 }
