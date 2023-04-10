@@ -18,9 +18,20 @@ public class Agencia {
     public int getNum() {
         return num;
     }
-    public void setAgencia(int digito, String nome , int num) {
-        this.digito = digito;
+    public void setAgencia(String nome , int num) {
         this.num = num;
         this.nome = nome;
+    }
+    public void setDigito() {
+        int a = getNum();
+        String s = Integer.toString(a);
+        String n = s.substring(0, 1), m = s.substring(1,2) , l = s.substring(2,3), k = s.substring(3,4); 
+        int b = Integer.parseInt(n), c = Integer.parseInt(m),d = Integer.parseInt(l), e = Integer.parseInt(k);
+        int g = ((b*4) + (c*6) + (d*8) + (e*2))%11;
+        if( g == 10){
+            this.digito = 0;
+        } else{
+            this.digito = g;
+        } 
     }
 }
