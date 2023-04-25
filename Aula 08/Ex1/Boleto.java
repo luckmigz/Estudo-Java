@@ -3,11 +3,12 @@ public class Boleto extends Pagamento{
    private String numeroDoBoleto; 
    private int dia,mes,ano;
 
-   public Boleto(String numero, int d, int m, int a) {
-        this.numeroDoBoleto = numero;
-        this.dia = d;
-        this.mes = m;
-        this.ano = a;
+   public Boleto(String numero, int d, int m, int a,String nome, String cpf, double valor) {
+     super(nome, cpf,valor);
+     this.numeroDoBoleto = numero;
+     this.dia = d;
+     this.mes = m;
+     this.ano = a;
    }
   
    public String getNumeroDoBoleto() {

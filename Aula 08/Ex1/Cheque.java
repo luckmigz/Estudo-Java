@@ -2,7 +2,8 @@
 public class Cheque extends Pagamento{
     private String numeroDoCheque;
     
-    public Cheque(String numero){
+    public Cheque(String numero,String nome, String cpf, double valor){
+        super(nome, cpf,valor);
         this.numeroDoCheque = numero;
     }
     public String getNumeroDoCheque(){

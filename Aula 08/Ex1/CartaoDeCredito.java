@@ -1,7 +1,8 @@
 
 public class CartaoDeCredito extends Pagamento{
     private String numeroDoCartao;
-    public CartaoDeCredito(String numeroDoCartao) {
+    public CartaoDeCredito(String numeroDoCartao,String nome, String cpf, double valor) {
+        super(nome, cpf,valor);
         this.numeroDoCartao = numeroDoCartao;
     }
     public String getNumeroDoCartao() {
