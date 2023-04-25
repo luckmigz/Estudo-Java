@@ -1,4 +1,4 @@
-package Aula07;
+package Ex1;
 import java.util.Scanner;
 
 public class TesteAtrib {

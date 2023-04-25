@@ -1,4 +1,4 @@
-package Aula07;
+package Ex1;
 
 public class Atribucao {
     private Professor professor;
