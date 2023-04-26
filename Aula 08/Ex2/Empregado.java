@@ -7,4 +7,7 @@ public class Empregado extends PessoaFisica{
     public double salario(){
         return 0.0;
     }
+    public String dados(){
+        return super.dados();
+    }
 }

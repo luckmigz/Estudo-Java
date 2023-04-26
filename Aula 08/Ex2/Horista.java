@@ -7,6 +7,7 @@ public class Horista extends Empregado{
     public Horista(String nome, String sobrenome, String cpf,double salario, int horasTrab) {
         super(nome, sobrenome, cpf);
         this.horasTrab = horasTrab;
+        this.salario = salario;
     }
     public void setHorasTrab(int horasTrab) {
         this.horasTrab = horasTrab;
@@ -15,7 +16,11 @@ public class Horista extends Empregado{
         return horasTrab;
     }
     public double salario(){
-        double sal = salario*horasTrab;
-        return sal;
+        salario = salario*horasTrab;
+        return salario;
+    }
+    public String dados(){
+        String a = super.dados() + " Status: Horista" + "Salario: " + salario;
+        return a;
     }
 }
