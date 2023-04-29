@@ -8,4 +8,8 @@ public class Mensalista extends Empregado{
     public double salario(){
         return this.salario;
     }
+    public String dados(){
+        String a = super.dados() + "\nClassificação: Mensalista" ;
+        return a;
+    }
 }

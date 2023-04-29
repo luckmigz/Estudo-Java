@@ -9,4 +9,8 @@ public class Comissionado extends Mensalista{
     public double salario(){
         return super.salario()+comissao;
     }
+    public String dados(){
+        String a = super.dados() + " Comissionado" + "\nSalario: " + salario();
+        return a;
+    }
 }

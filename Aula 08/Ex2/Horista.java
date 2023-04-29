@@ -20,7 +20,7 @@ public class Horista extends Empregado{
         return salario;
     }
     public String dados(){
-        String a = super.dados() + " Status: Horista" + "Salario: " + salario;
+        String a = super.dados() + "\nClassificação: Horista" + "\nSalario: " + salario();
         return a;
     }
 }

@@ -17,7 +17,7 @@ public class Desempregado  extends PessoaFisica{
         return seguroDesemprgo;
     }
     public String dados(){
-        String a = super.dados() + " Status: Desempregado" ;
+        String a = super.dados() + "\nStatus: Desempregado" + "\nSeguro Desemprego: " + getSeguroDesemprego();
         return a;
     }
 }

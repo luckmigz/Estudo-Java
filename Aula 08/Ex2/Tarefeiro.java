@@ -18,4 +18,8 @@ public class Tarefeiro extends Empregado{
         double sal = salario*numTarefa;
         return sal;
     }
+    public String dados(){
+        String a = super.dados() + "\nClassificação: Tarefeiro" + "\nSalario: " + salario();
+        return a;
+    }
 }   

@@ -17,4 +17,9 @@ public class Vendedor extends  Empregado {
         salario = salario*produtos;
         return salario;
     }
+    
+    public String dados(){
+        String a = super.dados() + "\nClassificação: Vendedor" + "\nSalario: " + salario();
+        return a;
+    }
 }

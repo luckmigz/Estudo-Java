@@ -8,6 +8,7 @@ public class Empregado extends PessoaFisica{
         return 0.0;
     }
     public String dados(){
-        return super.dados();
+        return super.dados() + "\nStatus: Empregado";
     }
+    
 }
