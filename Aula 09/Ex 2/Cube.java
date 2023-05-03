@@ -5,8 +5,26 @@ public class Cube extends ThreeDimensionalShape {
         super(base);
         this.areaBase = areaBase;
     }
-    public double getAreaBase() {
-        return areaBase;
+    @Override
+    public double getBase() {
+        return super.getBase();
     }
-    
+    @Override
+    public void setBase(double base) {
+        super.setBase(base);
+    }
+    public double getSetAreaBase() {
+        Square square = new Square(getBase());
+        return square.calculaArea();
+    }
+    public double calculaVolume(){
+        double volume = areaBase*super.getBase();
+        return volume;
+    }
+    public double calculaArea(){
+        Square square = new Square(getBase());
+        double area = 6*square.calculaArea();
+        return area;
+    }
+
 }

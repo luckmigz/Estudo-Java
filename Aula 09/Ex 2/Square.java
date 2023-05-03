@@ -1,19 +1,15 @@
 
 public class Square extends TwoDimensionalShape {
-    private double altura; 
-    public double area;
-    public Square(double base, double altura) {
+    private double area,perimetro; 
+    public Square(double base) {
         super(base);
-        this.altura = altura;
     }
-    public double getAltura() {
-        return altura;
-    }
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-    public double calcula(){
-        area = super.getBase()*altura;
+       public double calculaArea(){
+        area = Math.pow(super.getBase(),2);
         return area;
+    }
+    public double calculaPerimetro(){
+        perimetro = Math.pow(super.getBase(),2);
+        return perimetro;
     }
 }

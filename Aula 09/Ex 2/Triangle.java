@@ -5,14 +5,14 @@ public class Triangle extends TwoDimensionalShape {
         super(base);
         this.altura = altura;
     }
-    public void calculoArea(){
-        double base = super(base);
-        area = (base * altura) / 2;
+    public double calculaArea(){
+        area = (super.getBase() * altura) / 2;
+        return area;
     }
-    public void calculoPerimetro(){
-        double base = super(base);
+    public double calculaPerimetro(){
         double perimetro, ladoc; 
-        ladoc = Math.sqrt(Math.pow(altura,2) + Math.pow(base/2, 2));
-        perimetro = 2*ladoc + base; 
+        ladoc = Math.sqrt(Math.pow(altura,2) + Math.pow(super.getBase()/2, 2));
+        perimetro = 2*ladoc + super.getBase(); 
+        return perimetro; 
     }
 }
