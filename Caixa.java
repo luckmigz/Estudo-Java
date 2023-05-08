@@ -9,6 +9,9 @@ public class Caixa {
         this.posicao = posicao;
         this.posicao = posicao;
     }
+    public Caixa(){
+        
+    }
     public String getCorredor() {
         return corredor;
     }

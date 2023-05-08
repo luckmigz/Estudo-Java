@@ -19,7 +19,7 @@ public class AppBloco {
                 n = 2;
                 break;
                 case 2: 
-                nota = JOptionPane.showInputDialog(null,"Digite a nota a alterada");
+                nota = JOptionPane.showInputDialog(null,"Digite a nota a ser alterada");
                 blocoDeNotas.alterNota(nota);
                 n = 3;
                 break;
