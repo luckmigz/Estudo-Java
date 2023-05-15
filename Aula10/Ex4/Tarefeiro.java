@@ -24,4 +24,10 @@ public class Tarefeiro extends Empregado{
         String a = super.dados() + "\nClassificação: Tarefeiro" + "\nSalario: " + salario();
         return a;
     }
+    public Tarefeiro(){
+        super();
+    }
+    public void setSalary(double salary){
+        this.salario = salary;
+    }
 }   

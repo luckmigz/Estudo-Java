@@ -16,4 +16,13 @@ public class Comissionado extends Mensalista{
     public Comissionado(){
         
     }
+    public void setSalario(double salary){
+        super.setSalario(salary);
+    }
+    public double getComi(){
+        return comissao;
+    }
+    public void setComi(double comi){
+        this.comissao = comi;
+    }
 }

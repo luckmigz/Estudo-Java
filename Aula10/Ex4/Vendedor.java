@@ -24,4 +24,10 @@ public class Vendedor extends  Empregado {
         String a = super.dados() + "\nClassificação: Vendedor" + "\nSalario: " + salario();
         return a;
     }
+    public Vendedor(){
+        super();
+    }
+    public void setSalary(double salary){
+        this.salario = salary;
+    }
 }

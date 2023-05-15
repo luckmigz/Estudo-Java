@@ -12,6 +12,6 @@ public class Empregado extends PessoaFisica{
         return super.dados() + "\nStatus: Empregado";
     }
     public Empregado(){
-        
+        super();
     }
 }

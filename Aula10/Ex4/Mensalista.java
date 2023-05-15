@@ -15,6 +15,12 @@ public class Mensalista extends Empregado{
         return a;
     }
     public Mensalista(){
-        
+        super();
+    }
+    public void setSalario(double salario){
+        this.salario = salario;
+    }
+    public double getSalario() {
+        return salario;
     }
 }

@@ -1,6 +1,7 @@
 package Aula10.Ex4;
 
 
+
 public class Horista extends Empregado{
     private int horasTrab;
     private double salario;
@@ -16,6 +17,9 @@ public class Horista extends Empregado{
     public int getHorasTrab() { 
         return horasTrab;
     }
+    public void setSalary(double salary){
+        this.salario = salary;
+    }
     public double salario(){
         salario = salario*horasTrab;
         return salario;
@@ -23,5 +27,8 @@ public class Horista extends Empregado{
     public String dados(){
         String a = super.dados() + "\nClassificação: Horista" + "\nSalario: " + salario();
         return a;
+    }
+    public Horista(){
+        super();
     }
 }

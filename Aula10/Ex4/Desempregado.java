@@ -21,4 +21,5 @@ public class Desempregado  extends PessoaFisica{
         String a = super.dados() + "\nStatus: Desempregado" + "\nSeguro Desemprego: " + getSeguroDesemprego();
         return a;
     }
+    
 }
