@@ -1,3 +1,5 @@
+import Aula07.Sort;
+
 public class Main {
     public static void main(String[] args){
         int[] a = {1,3,99,32,1990,2001,00001,1000};
