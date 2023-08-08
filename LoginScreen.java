@@ -18,9 +18,10 @@ public class LoginScreen extends JFrame {
         this.add(panel,CENTER_ALIGNMENT);
         JButton confirm = new JButton("Confirma"); 
         panel.add(confirm,BOTTOM_ALIGNMENT);
-        JTextField password = new JTextField( );
-        JTextField username = new JTextField( );
-        panel.add(password);
-        panel.add(username);
+        JPasswordField field = new JAsswordField(); 
+        JTextField tf = new JTextField("Digite o nome de usuario");
+        
+
+
     }
 }
