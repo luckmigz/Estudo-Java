@@ -7,7 +7,7 @@ public class Logintest {
         log.setSize( 325, 125 );
         log.setVisible(true);
         log.setResizable(false);
-        System.out.println(log.getPassword());
-        System.out.println(log.getUser()); 
+        Conn conn = new Conn();
+        conn.connect();
     }
 }

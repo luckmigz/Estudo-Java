@@ -31,16 +31,24 @@ public class LoginScreen extends JFrame {
             if( event.getSource() == button){   
                 user = tf.getText();
                 pass = String.format( new String (passwordField.getPassword()));
+                setPassword(pass);
+                setUser(user);
                 System.out.println("Click");
                 
                
             }
         }
     }
+    public void setPassword( String password){
+        pass = password;
+    }
+    public void setUser( String users){
+        user = users;
+    }
     public String getPassword(){
          return pass;
        }
-       public String getUser(){
+    public String getUser(){
             return user;
        }
 }
