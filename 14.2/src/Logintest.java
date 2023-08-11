@@ -1,3 +1,8 @@
+import  java.sql.Connection;
+import  java.sql.PreparedStatement;
+import  java.sql.ResultSet;
+import  java.sql.SQLException;
+
 import javax.swing.JFrame;
 
 public class Logintest {
@@ -7,7 +12,6 @@ public class Logintest {
         log.setSize( 325, 125 );
         log.setVisible(true);
         log.setResizable(false);
-        Conn conn = new Conn();
-        conn.connect();
+        Connection conn =  Conn.connect(); 
     }
 }
