@@ -2,7 +2,7 @@ public final class User {
     private String sUser;
     private String sPass; 
 
-    public User(String sI, String sU, String sP){
+    public User(String sU, String sP){
         sUser = sU; 
         sPass = sP;
     }

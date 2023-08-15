@@ -1,13 +1,11 @@
 import  java.sql.Connection;
 import  java.sql.DriverManager;
-import  java.sql.PreparedStatement;
-import  java.sql.ResultSet;
 import  java.sql.SQLException;
 
 public class Conn {
     private static final String URL  =   "jdbc:mysql://localhost:3306/tutorial";
     private static final String USER =   "root";
-    private static final String PASS =   "root";
+    private static final String PASS =   "";
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String ERROBD = "Erro na conexão com o Banco de Dados: "; 
 
