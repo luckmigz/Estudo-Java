@@ -1,0 +1,39 @@
+Mensagem Clara (Hexadecimal): 
+0000 - 5b 49 20 6d 69 73 73 20 74 68 65 20 77 61 79 20  - [I miss the way 
+0010 - 79 6f 75 20 73 61 79 20 6d 79 20 6e 61 6d 65 2c  - you say my name,
+0020 - 20 54 68 65 20 77 61 79 20 79 6f 75 20 62 65 6e  -  The way you ben
+0030 - 64 2c 20 74 68 65 20 77 61 79 20 79 6f 75 20 62  - d, the way you b
+0040 - 72 65 61 6b 2c 20 59 6f 75 72 20 6d 61 6b 65 75  - reak, Your makeu
+0050 - 70 20 72 75 6e 6e 69 6e 67 20 64 6f 77 6e 20 79  - p running down y
+0060 - 6f 75 72 20 66 61 63 65 5d                       - our face]
+ 
+    
+>>> Cifrando com o algoritmo Dummy... 
+Mensagem Cifrada (Hexadecimal): 
+0000 - 5b 4a 22 70 6d 78 79 27 7c 71 6f 2b 83 6e 87 2f  - [J"pmxy'|qo+.n./
+0010 - 89 80 87 33 87 76 8f 37 85 92 3a 89 7d 8a 83 4b  - ...3.v.7..:.}..K
+0020 - 40 75 8a 88 44 9c 87 a0 48 a2 99 a0 4c 8f 93 9d  - @u..D...H...L...
+0030 - 94 5d 52 a7 9c 9a 56 ae 99 b2 5a b4 ab b2 5e a1  - .]R...V...Z...^.
+0040 - b2 a6 a3 ae 70 65 9f b6 bd bb 6a b8 ad b8 b3 c4  - ....pe....j.....
+0050 - c0 71 c4 c8 c2 c3 bf c5 bf 79 be ca d3 cb 7e d8  - .q.......y....~.
+0060 - cf d6 d4 83 ca c6 c9 cc c5                       - .........
+ 
+ 
+>>> Cifrando com o algoritmo AES... 
+ 
+Mensagem Cifrada (Hexadecimal): 
+0000 - 77 0b bc 4a 14 d7 0b f1 98 d6 e7 e6 2a 0b 17 59  - w..J........*..Y
+0010 - d3 89 83 0b 23 fe f7 38 62 fa b1 c3 8a 3a 71 61  - ....#..8b....:qa
+0020 - 8e c1 64 81 9f 87 16 f8 1e 2e f1 0f a6 71 eb ad  - ..d..........q..
+0030 - c9 59 5a ed 71 92 1e 62 aa a8 32 fa f9 5c 3e ec  - .YZ.q..b..2..\>.
+0040 - 02 34 9c e6 3b 4a 3d 76 5b fe 59 85 d6 28 12 0e  - .4..;J=v[.Y..(..
+0050 - a8 68 49 da c2 a4 ee f5 41 5e 47 1c ce 38 14 13  - .hI.....A^G..8..
+0060 - 46 6b 4a 8c 33 4b e2 02 d5 c0 29 86 33 e5 db 27  - FkJ.3K....).3..'
+ 
+ 
+Mensagem Cifrada (String): 
+w¼J×ñÖçæ*YÓ#þ÷8bú±Ã:qaÁdø.ñ¦që­ÉYZíqbª¨2úù\>ì4æ;J=v[þYÖ(¨hIÚÂ¤îõA^GÎ8FkJ3KâÕÀ)3åÛ' 
+>>> Cifrando com o algoritmo RSA... 
+ 
+Mensagem Cifrada (String): 
++ïPò.ÁÒpVWêEúuøªÕWFÑÉñòQhwÕ8eê.¿\zSLVv2¹+u ¢°sè¸§ùG­fÙ'j¥k»ÕÕ¢¾ rþIÜ£3Dz¢îhÜYý'C[!ªDïý?½)	®l/¾ò'åEÿ« 
