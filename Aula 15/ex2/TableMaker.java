@@ -8,9 +8,10 @@ import java.util.Vector;
 
 public class TableMaker extends JFrame {
     private JTable tabela;
+    private Local local = new Local();
 
     public TableMaker() {
-        setTitle("Tabela de Notas e Faltas");
+        setTitle(local.getLang().getString("table.title"));
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -25,10 +26,10 @@ public class TableMaker extends JFrame {
     private void carregarDados() {
         Vector<String> colunas = new Vector<>();
         colunas.add("ID");
-        colunas.add("Usuário ID");
-        colunas.add("Nota");
-        colunas.add("Faltas");
-        colunas.add("Data Atualização");
+        colunas.add(local.getLang().getString("table.userid"));
+        colunas.add(local.getLang().getString("table.grade"));
+        colunas.add(local.getLang().getString("table.absence"));
+        colunas.add(local.getLang().getString("table.attdate"));
 
         Vector<Vector<Object>> dados = new Vector<>();
 
