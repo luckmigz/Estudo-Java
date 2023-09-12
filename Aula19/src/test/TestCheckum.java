@@ -20,11 +20,14 @@ public class TestCheckum {
     @DisplayName("Retangulo")
 
     public void testToBinary(){
-        String a = "1";
+        String a = "teste";
+        String esperado = "[B@16c0663d";
         try {
             byte[] v = check.toBinary(a);
-            byte[] b = check.toBinary(a);
-            assertEquals(v,v);
+            byte[] v2 = check.toBinary(a);
+            String teste = v.toString();
+            
+            assertEquals(esperado,teste);
 
 
         } catch (UnsupportedEncodingException e) {
