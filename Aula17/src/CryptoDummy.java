@@ -9,7 +9,7 @@ public   class CryptoDummy
    }
    public void geraChave(File fDummy) throws IOException  
    {  // Gera uma chave Dummy simetrica (dk: 0 a 100):
-      int   dk = (int) (Math.exp(Math.sqrt(-1))*(Math.pow(Math.cos(Math.random()),2)+ Math.pow(Math.sin(Math.random()), 2)));
+      int   dk = (int) (Math.random()*101);
       // Grava a chave Dummy simetrica em formato serializado  
       ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fDummy));  
       oos.writeObject(dk);  
@@ -21,8 +21,12 @@ public   class CryptoDummy
       int iDummy = (Integer) ois.readObject();
       ois.close();
       textoCifrado = texto;
-      for(int i = 0; i < texto.length; i++)
-      {  textoCifrado[i] = (byte) (textoCifrado[i] + i + iDummy);
+      int j = 0;
+      for(int i = texto.length-1; i > 0; i--)
+      { 
+         
+         textoCifrado[i] = (byte) (textoCifrado[i] + j*iDummy );
+         j++;
       }
    }
    public  byte[]   getTextoCifrado() throws   Exception
@@ -34,8 +38,12 @@ public   class CryptoDummy
       int iDummy = (Integer) ois.readObject();
       ois.close();
       textoDecifrado = texto;
-      for(int i = 0; i < texto.length; i++)
-      {  textoDecifrado[i] = (byte) (textoDecifrado[i] - i - iDummy);
+      int j = 0;
+      for(int i = texto.length-1; i > 0; i--)
+      {  
+         textoDecifrado[i] = (byte) (textoDecifrado[i] - j*iDummy );
+         System.out.println(textoDecifrado[i]);
+         j++;
       }
    }
    public  byte[]   getTextoDecifrado()  throws   Exception

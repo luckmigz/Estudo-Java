@@ -10,30 +10,31 @@ Mensagem Clara (Hexadecimal):
     
 >>> Cifrando com o algoritmo Dummy... 
 Mensagem Cifrada (Hexadecimal): 
-0000 - 5b 4a 22 70 6d 78 79 27 7c 71 6f 2b 83 6e 87 2f  - [J"pmxy'|qo+.n./
-0010 - 89 80 87 33 87 76 8f 37 85 92 3a 89 7d 8a 83 4b  - ...3.v.7..:.}..K
-0020 - 40 75 8a 88 44 9c 87 a0 48 a2 99 a0 4c 8f 93 9d  - @u..D...H...L...
-0030 - 94 5d 52 a7 9c 9a 56 ae 99 b2 5a b4 ab b2 5e a1  - .]R...V...Z...^.
-0040 - b2 a6 a3 ae 70 65 9f b6 bd bb 6a b8 ad b8 b3 c4  - ....pe....j.....
-0050 - c0 71 c4 c8 c2 c3 bf c5 bf 79 be ca d3 cb 7e d8  - .q.......y....~.
-0060 - cf d6 d4 83 ca c6 c9 cc c5                       - .........
+0000 - 5b 17 ec 37 31 39 37 e2 34 26 21 da 2f 17 2d d2  - [..7197.4&!./.-.
+0010 - 29 1d 21 ca 1b 07 1d c2 0d 17 bc 08 f9 03 f9 be  - ).!.............
+0020 - b0 e2 f4 ef a8 fd e5 fb a0 f7 eb ef 98 d8 d9 e0  - ................
+0030 - d4 9a 8c de d0 cb 84 d9 c1 d7 7c d3 c7 cb 74 b4  - ..........|...t.
+0040 - c2 b3 ad b5 74 66 9d b1 b5 b0 5c a7 99 a1 99 a7  - ....tf....\.....
+0050 - a0 4e 9e 9f 96 94 8d 90 87 3e 80 89 8f 84 34 8b  - .N.......>....4.
+0060 - 7f 83 7e 2a 6e 67 67 67 5d                       - ..~*nggg]
  
  
 >>> Cifrando com o algoritmo AES... 
  
 Mensagem Cifrada (Hexadecimal): 
-0000 - 77 0b bc 4a 14 d7 0b f1 98 d6 e7 e6 2a 0b 17 59  - w..J........*..Y
-0010 - d3 89 83 0b 23 fe f7 38 62 fa b1 c3 8a 3a 71 61  - ....#..8b....:qa
-0020 - 8e c1 64 81 9f 87 16 f8 1e 2e f1 0f a6 71 eb ad  - ..d..........q..
-0030 - c9 59 5a ed 71 92 1e 62 aa a8 32 fa f9 5c 3e ec  - .YZ.q..b..2..\>.
-0040 - 02 34 9c e6 3b 4a 3d 76 5b fe 59 85 d6 28 12 0e  - .4..;J=v[.Y..(..
-0050 - a8 68 49 da c2 a4 ee f5 41 5e 47 1c ce 38 14 13  - .hI.....A^G..8..
-0060 - 46 6b 4a 8c 33 4b e2 02 d5 c0 29 86 33 e5 db 27  - FkJ.3K....).3..'
+0000 - fa e1 a1 af 01 7b 2f 75 88 fc ec 63 88 1e 91 e9  - .....{/u...c....
+0010 - dc 7d b3 8c d9 1a 1f 9e 8d db 86 59 cb 64 88 09  - .}.........Y.d..
+0020 - 95 e8 48 f4 a8 f9 6f a7 c2 76 d0 42 bd 7a 84 bb  - ..H...o..v.B.z..
+0030 - 93 44 23 39 a0 5e 2d cb 35 57 f7 4a 12 8f 68 07  - .D#9.^-.5W.J..h.
+0040 - 7f 89 ca 71 1f 05 98 61 55 d7 2c f1 ec 06 40 48  - ...q...aU.,...@H
+0050 - 33 47 c6 d2 a0 eb d6 3c 9b e8 50 7d 4d 30 8b b2  - 3G.....<..P}M0..
+0060 - 63 86 eb 3f a0 cc 11 4c 60 25 11 cd a0 09 1c 62  - c..?...L`%.....b
  
  
 Mensagem Cifrada (String): 
-w¼J×ñÖçæ*YÓ#þ÷8bú±Ã:qaÁdø.ñ¦që­ÉYZíqbª¨2úù\>ì4æ;J=v[þYÖ(¨hIÚÂ¤îõA^GÎ8FkJ3KâÕÀ)3åÛ' 
+úá¡¯{/uüìcéÜ}³ÙÛYËd	èHô¨ùo§ÂvÐB½z»D#9 ^-Ë5W÷JhÊqaU×,ñì@H3GÆÒ ëÖ<èP}M0²cë? ÌL`%Í 	b 
 >>> Cifrando com o algoritmo RSA... 
  
 Mensagem Cifrada (String): 
-+ïPò.ÁÒpVWêEúuøªÕWFÑÉñòQhwÕ8eê.¿\zSLVv2¹+u ¢°sè¸§ùG­fÙ'j¥k»ÕÕ¢¾ rþIÜ£3Dz¢îhÜYý'C[!ªDïý?½)	®l/¾ò'åEÿ« 
+üÞÇéI§`Ööã~É!CYªÃ9Ü>_5 )k
+[Áõ=fnmã	áËµ\lyÛxa¶ ©"Frp8Ô6|¯.±êhjU=ånPG÷& 6­-×Í:çy³ù¶|«ÐÊäs¥üöXrfw 
