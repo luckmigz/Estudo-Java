@@ -47,7 +47,10 @@ public class TestBiTree {
         double avg = tree.average();
         System.out.println("A média dos valores na árvore é: " + avg);
 
-
+        System.out.println("Número de nós nulos na árvore: " + tree.countNullNodes());
+        System.out.println("Número de nós na árvore: " + tree.countNodes());
+        System.out.println("Número de folhas na árvore: " + tree.countLeaves());
+        System.out.println("Altura da árvore: " + tree.height());
     }
 
 }

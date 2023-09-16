@@ -145,5 +145,68 @@ public class BiTree{
 
         return leftSum + rightSum + currentNode.value;
     }
+    public int countNullNodes() {
+        return countNullNodesRecursive(root);
+    }
+
+    private int countNullNodesRecursive(Node currentNode) {
+        if (currentNode == null) {
+            return 1; // Conta o nó null
+        }
+
+        int leftNulls = countNullNodesRecursive(currentNode.left);
+        int rightNulls = countNullNodesRecursive(currentNode.right);
+
+        return leftNulls + rightNulls;
+    }
+
+    public int countNodes() {
+        return countNodesRecursive(root);
+    }
+
+    private int countNodesRecursive(Node currentNode) {
+        if (currentNode == null) {
+            return 0;
+        }
+
+        int leftCount = countNodesRecursive(currentNode.left);
+        int rightCount = countNodesRecursive(currentNode.right);
+
+        return leftCount + rightCount + 1; // Conta o próprio nó
+    }
+
+    public int countLeaves() {
+        return countLeavesRecursive(root);
+    }
+
+    private int countLeavesRecursive(Node currentNode) {
+        if (currentNode == null) {
+            return 0;
+        }
+
+        if (currentNode.left == null && currentNode.right == null) {
+            return 1; // É uma folha
+        }
+
+        int leftLeaves = countLeavesRecursive(currentNode.left);
+        int rightLeaves = countLeavesRecursive(currentNode.right);
+
+        return leftLeaves + rightLeaves;
+    }
+
+    public int height() {
+        return heightRecursive(root);
+    }
+
+    private int heightRecursive(Node currentNode) {
+        if (currentNode == null) {
+            return -1; // Árvore vazia tem altura -1
+        }
+
+        int leftHeight = heightRecursive(currentNode.left);
+        int rightHeight = heightRecursive(currentNode.right);
+
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
 }
 
