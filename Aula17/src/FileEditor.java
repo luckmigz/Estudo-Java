@@ -18,7 +18,7 @@ public class FileEditor {
     }
     public void readFile(){
         try {
-            in = new Scanner(new File("C:\\Users\\Lucas\\Desktop\\estudoJava\\Aula17\\Mensagem.txt"));
+            in = new Scanner(new File("Aula17","Mensagem.txt"));
 
         } catch (FileNotFoundException e) {
             
