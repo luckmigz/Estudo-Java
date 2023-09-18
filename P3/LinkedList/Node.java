@@ -1,4 +1,4 @@
-package Aula10;
+package P3.LinkedList;
 
 // Def do nó da lista ligada 
 public class Node {
