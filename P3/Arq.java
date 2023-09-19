@@ -2,6 +2,8 @@ package P3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
@@ -48,15 +50,28 @@ public class Arq {
         
     }
 
-    public void write(String msg){
-        out.format("%s \n", msg);
+    public void write(String msg,File file){
+        try {
+            FileWriter fw = new FileWriter(file,true);
+            out = new Formatter(fw);
+            out.format("%s \n", msg);
+            fw.close();
+            out.close();
+        } catch ( IOException e) {
+            
+            e.printStackTrace();
+        }
+        
     }
 
     public void close(){
         if(out != null){
             out.close();
+            
+        }if(in != null){
             in.close();
         }
+
     }
 
     public String getMsgS(){

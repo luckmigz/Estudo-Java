@@ -1,19 +1,10 @@
 package P3;
 
 import java.util.ArrayList;
-import java.util.Formatter;
 import java.util.List;
-import java.util.Scanner;
-import java.util.regex.*;
 
 public class Login {
-    private Arq arq = new Arq();
-    private Formatter out;
-    private Scanner in; 
-    private String username; 
-    private String password;
-    
-    
+    private int control; 
     public List<String> breaker(List<String> list){
         List<String> parts = new ArrayList<String>();
 
@@ -29,28 +20,31 @@ public class Login {
         
     }
 
-    public boolean validate(String user, String password, List<String> list){
-        List<String> parts = new ArrayList<String>();
-        parts = breaker(list);
-        boolean result = false;
+    public boolean validate(String user, String password, List<String> list) {
+        List<String> parts = breaker(list);
 
-        for(String login:parts) {
-            if(login.equals(user)){
-                System.out.println("Login: " + login);
-                if(login.equals(password)){
-                    System.out.println("Password "+login);
-                    result = true;
-                }else{
-                    System.out.println("Invalid login "+ login);
-                    result = false;
-                }
-            }else{
-                System.out.println("Invalid login1 "+ login);
-                result = false;
+        for (String login : parts) {
+            if (login.equals(user)) {
+                System.out.println("user pass");
+                for(String pass: parts) {
+                    if (pass.equals(password)) {
+                        System.out.println("aaaa");
+                        control = 0;
+                        return true;
+                    } else if(!pass.equals(password)) {
+                        System.out.println(" errrrrr");
+                        // Senha invalida
+                        control = 1;
+                        return false;
+                    }
+                } 
             }
-            return result;
         }
-        return result;
+        // User invalido 
+        control = -1; 
+        return false;
     }
-
+    public int getControl() {
+        return control;
+    }
 }

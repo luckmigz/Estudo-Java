@@ -1,3 +1,1 @@
-senha : login
-senha1 : login2
-login3 : senha3
+login : 1
