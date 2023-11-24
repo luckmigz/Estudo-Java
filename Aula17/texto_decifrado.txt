@@ -1,6 +1,0 @@
-Msg decifrada com: AES  
-[I miss the way you say my name, The way you bend, the way you break, Your makeup running down your face] 
-Msg decifrada com: DUMMY  
-[I miss the way you say my name, The way you bend, the way you break, Your makeup running down your face] 
-Msg decifrada com: RSA  
-[I miss the way you say my name, The way you bend, the way you break, Your makeup running down your face] 
