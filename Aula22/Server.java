@@ -22,7 +22,7 @@ public class Server {
         }catch(IOException e){
             System.err.println("Erro ao iniciar o servidor");
         }
-        System.out.println("servidor finali");
+        System.out.println("servidor finalizado");
     }
     public void start() throws IOException{
         serverSocket = new ServerSocket(port);
