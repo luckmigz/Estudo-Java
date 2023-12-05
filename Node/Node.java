@@ -47,7 +47,7 @@ public class Node {
     public void setData(String data) {
         this.data = data;
     }
-    public void setitem(int item) {
+    public void setItem(int item) {
         this.item = item;
     }
     public void setKey(int key) {
