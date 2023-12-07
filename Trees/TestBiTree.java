@@ -1,4 +1,4 @@
-package P3.BiTree;
+package Trees;
 
 public class TestBiTree {
     
