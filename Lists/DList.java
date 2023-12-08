@@ -7,7 +7,7 @@ public class DList {
     public Node head, tail;
    
 
-    public DList(int item){
+    public DList(String item){
         Node node = new Node(item);
         node.setNext(null);
         node.setPrev(null);
@@ -22,7 +22,7 @@ public class DList {
         this.tail = null;
     }
 
-    public void addEnd(int item){
+    public void addEnd(String item){
         Node node = new Node(item);
 
         if(this.size == 0) {  
@@ -37,7 +37,7 @@ public class DList {
             this.size++;
         }  
     }
-    public void addBegin(int item){
+    public void addBegin(String item){
         Node node = new Node(item);
 
         if(this.size == 0){
@@ -60,7 +60,7 @@ public class DList {
             Node n = this.head;
             int i = 1;
             while (n != null) {
-                System.out.println("Node : " + i + " Valor: " + n.getItem());
+                System.out.println("Node : " + i + " Valor: " + n.getData());
                 n = n.getNext();
                 i++;
             }
@@ -78,7 +78,7 @@ public class DList {
             Node n = this.tail;
             int i = this.size;
             while (n != null) {
-                System.out.println("Node : " + i + " Valor: " + n.getItem());
+                System.out.println("Node : " + i + " Valor: " + n.getData());
                 n = n.getPrev();
                 i--;
             }
@@ -119,7 +119,7 @@ public class DList {
                 }
             }
         }
-
+    //Funciona apenas com numeros
     public void sortListDescending() {
         if (size > 1) {
             Node current = head;
@@ -144,10 +144,10 @@ public class DList {
             while (current != null) {
                 Node index = current.getNext();
                 while (index != null) {
-                    if (current.getItem() < index.getItem()) {
-                        int temp = current.getItem();
-                        current.setItem(index.getItem());
-                        index.setItem(temp);
+                    if (current.getData().length() < index.getData().length()) {
+                        String temp = current.getData();
+                        current.setData(index.getData());
+                        index.setData(temp);
                     }
                     index = index.getNext();
                 }

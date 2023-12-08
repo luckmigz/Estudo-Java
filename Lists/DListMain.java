@@ -5,12 +5,12 @@ public class DListMain {
         
         DList main = new DList();  
        
-        main.addBegin(4);  
-        main.addBegin(2);  
-        main.addBegin(3);  
-        main.addBegin(5);  
-        main.addEnd(6);  
-        main.addEnd(7);  
+        main.addBegin("4");  
+        main.addBegin("Jonatâ");  
+        main.addBegin("Celton Melo");  
+        main.addBegin("Robert");  
+        main.addEnd("6");  
+        main.addEnd("mil300eSIX.4");  
    
         main.printList();  
         main.printBackward();
