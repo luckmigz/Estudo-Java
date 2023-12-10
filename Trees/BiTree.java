@@ -49,38 +49,50 @@ public class BiTree{
         }
     }
     // retorna nodes em ordem preorder
-    public void preOrder() {
-        preOrderRecursive(root);
+    public String preOrder() {
+        StringBuilder result = new StringBuilder();
+        preOrderRecursive(root, result);
+        return result.toString().trim();
     }
-    private void preOrderRecursive(Node currentNode) {
+
+    private void preOrderRecursive(Node currentNode, StringBuilder result) {
         if (currentNode != null) {
-            System.out.print(currentNode.value + " ");
-            preOrderRecursive(currentNode.left);
-            preOrderRecursive(currentNode.right);
+            result.append(currentNode.value).append(" ");
+            preOrderRecursive(currentNode.left, result);
+            preOrderRecursive(currentNode.right, result);
         }
     }
+
     // percurso inorder
-    public void inOrder() {
-        inOrderRecursive(root);
+     public String inOrder() {
+        StringBuilder result = new StringBuilder();
+        inOrderRecursive(root, result);
+        return result.toString().trim();
     }
-    private void inOrderRecursive(Node currentNode) {
+
+    private void inOrderRecursive(Node currentNode, StringBuilder result) {
         if (currentNode != null) {
-            inOrderRecursive(currentNode.left);
-            System.out.print(currentNode.value + " ");
-            inOrderRecursive(currentNode.right);
+            inOrderRecursive(currentNode.left, result);
+            result.append(currentNode.value).append(" ");
+            inOrderRecursive(currentNode.right, result);
         }
     }
+
     //retorna nodes em ordem postorder
-    public void postOrder() {
-        postOrderRecursive(root);
+    public String postOrder() {
+        StringBuilder result = new StringBuilder();
+        postOrderRecursive(root, result);
+        return result.toString().trim();
     }
-    private void postOrderRecursive(Node currentNode) {
+
+    private void postOrderRecursive(Node currentNode, StringBuilder result) {
         if (currentNode != null) {
-            postOrderRecursive(currentNode.left);
-            postOrderRecursive(currentNode.right);
-            System.out.print(currentNode.value + " ");
+            postOrderRecursive(currentNode.left, result);
+            postOrderRecursive(currentNode.right, result);
+            result.append(currentNode.value).append(" ");
         }
     }
+
     //Conta o n de nós
     public int countNodes() {
         return countNodes(root);
@@ -96,6 +108,7 @@ public class BiTree{
 
         return leftCount + rightCount + 1; // Conta o próprio nó
     }
+    
     //Conta o n de filhos folha
     public int countLeaves() {
         return countLeaves(root);
@@ -114,6 +127,7 @@ public class BiTree{
 
         return leftLeaves + rightLeaves;
     }
+
     //retorna a altura da raiz
     public int height() {
         return height(root);

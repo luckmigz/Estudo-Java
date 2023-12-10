@@ -25,16 +25,15 @@ public class TestBiTree {
         System.out.println("A árvore contém o valor 9: " + tree.hasIt(9));
 
         System.out.println("Percurso pós-ordem:");
-        tree.postOrder();
+        System.out.println(tree.postOrder());
         System.out.println();
 
         System.out.println("Percurso pré-ordem:");
-        tree.preOrder();
-        System.out.println();
+        System.out.println(        tree.preOrder()+ "\n");
 
         System.out.println("Percurso em ordem:");
-        tree.inOrder();
-        System.out.println();
+       
+        System.out.println( tree.inOrder()+ "\n");
 
         int max = tree.findMax();
         System.out.println("O valor máximo na árvore é: " + max);
