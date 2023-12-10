@@ -32,8 +32,9 @@ public class NetworkService {
     }
 
     private void acceptClients() {
-        new Thread(() -> {
-            while (true) {
+        
+        do{new Thread(() -> {
+             {
                 try {
                     Socket clientSocket = serverSocket.accept();
                     ClientHandler clientHandler = new ClientHandler(clientSocket, this);
@@ -46,7 +47,7 @@ public class NetworkService {
                 }
 
             }
-        }).start();
+        }).start();}while (true);
     }
 
     public void removeClient(ClientHandler clientHandler) {
